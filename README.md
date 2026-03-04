@@ -32,6 +32,14 @@ go-tasks/
 │       ├── task01/               — таймаут запроса
 │       └── task02/               — идентификатор запроса через контекст
 │
+├── 03-types/
+│   ├── 3.1-structs/              — структуры и композиция
+│   ├── 3.2-methods/              — методы и указатели
+│   ├── 3.3-interfaces/           — интерфейсы
+│   ├── 3.4-errors/               — обработка ошибок
+│   ├── 3.5-generics/             — дженерики
+│   └── 3.7-project/              — практическое задание
+│
 ├── 04-concurrency/
 │   ├── 4.1-goroutines/tasks/
 │   │   ├── task01/               — параллельная обработка с WaitGroup
@@ -45,6 +53,14 @@ go-tasks/
 │   └── 4.4-iterators/tasks/
 │       ├── task01/               — итератор для стека
 │       └── task02/               — генератор чисел Фибоначчи
+│
+├── 05-infrastructure/
+│   ├── 5.1-http/                 — HTTP-сервер: net/http
+│   ├── 5.2-middleware/           — middleware: цепочка обработчиков
+│   ├── 5.3-data/                 — работа с данными
+│   ├── 5.4-observability/        — slog, метрики, трейсинг
+│   ├── 5.5-grpc/                 — Protobuf & gRPC
+│   └── 5.6-project/              — практическое задание
 │
 └── 06-architecture/
     ├── 6.2-clean-arch/tasks/
