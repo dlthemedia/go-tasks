@@ -24,14 +24,16 @@
 package main
 
 import (
-	// TODO: импортируй пакет из module-b
-	// "github.com/yourname/module-b"
 	"fmt"
+
+	//ВОПРОС
+	//Тут должен был быть мой ник или yourname корректен?
+	moduleb "github.com/yourname/module-b"
 )
 
 func main() {
 	// TODO: вызови функцию SayHello из пакета module-b
 	// Пример: fmt.Println(moduleb.SayHello())
 
-	fmt.Println("Допиши этот код!")
+	fmt.Println(moduleb.SayHello("SVO"))
 }
