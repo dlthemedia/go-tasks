@@ -21,12 +21,24 @@ package main
 
 import "fmt"
 
-// TODO: напиши функцию countVowels(s string) int
-// Внутри используй for range и switch для проверки каждого символа
+func countV(s string) int {
+	// Срез всех гласных (русские + английские, оба регистра)
+	vowels := "аАеЕёЁиИоОуУыЫйЙэЭюЮяЯaAeEiIoOuU"
+	count := 0
+	for _, r := range s {
+		for _, v := range vowels {
+			if r == v {
+				count++
+				break
+			}
+		}
+	}
+	return count
+}
 
 func main() {
 	tests := []string{"Привет мир", "Hello World", "Go"}
 	for _, s := range tests {
-		fmt.Printf("%q -> гласных: %d\n", s, countVowels(s))
+		fmt.Printf("Строка %q содержит %d гласных\n", s, countV(s))
 	}
 }

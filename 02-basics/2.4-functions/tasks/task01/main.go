@@ -28,6 +28,19 @@ import (
 	"time"
 )
 
+func timeTrack(name string) func() {
+	start := time.Now()
+	return func() {
+
+		for i := range 1000000000 {
+			i++
+		}
+
+		end := time.Since(start)
+		fmt.Printf("%s заняло: %v\n", name, end)
+	}
+}
+
 // TODO: напиши функцию timeTrack(name string) func()
 // Подсказка: используй time.Now() для старта и time.Since(start) для подсчёта
 
